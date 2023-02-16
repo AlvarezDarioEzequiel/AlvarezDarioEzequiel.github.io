@@ -1,20 +1,37 @@
 *{
-  background-color: black;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
 
+header{
+    background-color: pink;
+}
+#datos-principales{
+    background-color: black;
+}
+.image-perfil img{
+    width: 150px;
+    border-radius: 50%;
+}
 h1 {
   color: greenyellow;
 }
 h2 {
   color: aqua;
 }
-h3 {
+h3,h4 {
   color: orange;
 }
-h4 {
-  color: orange;
+#proyectos{
+    background-color: black;
 }
-
+#cursos{
+    background-color: black;
+}
+#trabajos{
+    background-color: black;
+}
 ul{
     color: black;
 }
@@ -29,4 +46,7 @@ p {
 button{
     background-color: red;
     color: white;
+}
+footer{
+    background-color: pink;
 }
