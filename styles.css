@@ -1,52 +1,76 @@
-*{
-    box-sizing: border-box;
-    margin: 0%;
-    padding: 0%;
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
 
-header{
-    background-color: pink;
+header {
+  background-color: #181823;
+  color: white;
 }
-#datos-principales{
-    background-color: black;
+#datos-principales {
+  width: 100%;
+  background-color: #537fe7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.image-perfil img{
-    width: 150px;
-    border-radius: 50%;
+.image-perfil {
+  background-color: #c0eef2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.image-perfil img {
+  width: 150px;
+  border-radius: 50%;
+}
+p {
+  background-color: #c0eef2;
+  color: black;
 }
 h1 {
-  color: greenyellow;
+  color: #301e67;
 }
 h2 {
   color: aqua;
 }
-h3,h4 {
-  color: orange;
+h3 {
+  color: #e9f8f9;
 }
-#proyectos{
-    background-color: black;
+h4 {
+  color: #181823;
 }
-#cursos{
-    background-color: black;
+#proyectos {
+  background-color: #e9f8f9;
+  border: 5px solid #301e67;
+  width: 100%;
 }
-#trabajos{
-    background-color: black;
+#cursos {
+  background-color: #e9f8f9;
+  border: 5px solid #301e67;
+  width: 100%;
 }
-ul{
-    color: black;
+#trabajos {
+  background-color: #e9f8f9;
+  border: 5px solid #301e67;
+  width: 100%;
 }
-li{
-    color: blue;
-}
-
-p {
-  background-color: greenyellow;
+ul {
   color: black;
 }
-button{
-    background-color: red;
-    color: white;
+li {
+  color: blue;
 }
-footer{
-    background-color: pink;
+button {
+  background-color: blue;
+  color: white;
+}
+footer {
+  background-color: #181823;
+}
+h5 {
+  color: white;
 }
