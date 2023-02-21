@@ -24,7 +24,13 @@ nav ul li {
 #encabe {
   color: #c0eef2;
 }
-
+.container-fluid{
+  height: 250px;
+  background-color: purple;
+  color: white;
+  font-size: 50px;
+  margin: 20px;
+}
 body {
   background: url(https://th.bing.com/th/id/R.3a7cd36754fe86bfc4f15c6b7b4b7ce8?rik=solY%2fBuKo8tIuA&riu=http%3a%2f%2feskipaper.com%2fimages%2fblue-background-2.jpg&ehk=VRJi%2b%2fl73Dp9WFEpKtoD8rMiBlFr4kxJB5vE3s%2bgWVI%3d&risl=&pid=ImgRaw&r=0);
   background-repeat: repeat;
