@@ -1,3 +1,4 @@
+/* all content */
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -26,7 +27,7 @@ nav ul li {
 }
 .container-fluid{
   height: 250px;
-  background-color: purple;
+  background-color: blue;
   color: white;
   font-size: 50px;
   margin: 20px;
@@ -43,6 +44,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+/*class image profile*/
 .image-perfil {
   background: url(https://wallpapercave.com/wp/wp5883772.png);
   display: flex;
@@ -55,9 +57,8 @@ body {
   width: 150px;
   border-radius: 50%;
 }
-p {
-  color: black;
-}
+
+/*title & p*/
 h1 {
   color: #301e67;
 }
@@ -73,6 +74,11 @@ h4 {
 h5 {
   color: #301e67;
 }
+p {
+  color: black;
+}
+
+/*id contents*/
 #proyectos {
   background-color: #e9f8f9;
   border: 5px solid #301e67;
@@ -93,6 +99,8 @@ h5 {
   border-radius: 5px;
   width: 100%;
   margin: 20px;
+
+
 }
 ul {
   color: black;
@@ -106,7 +114,6 @@ button {
   color: #301e67;
   size: 40px;
 }
-
 #redes{
   margin-right: 10px;
 }
