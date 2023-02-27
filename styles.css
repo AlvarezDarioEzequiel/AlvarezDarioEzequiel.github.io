@@ -86,11 +86,14 @@ background-color:#301e67;
 
 /*proyects*/
 .proyectos {
+  background-color: #e9f8f9;
   border: 5px solid #301e67;
   border-radius: 5px;
   width: 100%;
   margin: 20px;
 }
+
+
 #cursos {
   background-color: #e9f8f9;
   border: 5px solid #301e67;
@@ -98,7 +101,7 @@ background-color:#301e67;
   width: 100%;
   margin: 20px;
 }
-#trabajos {
+#experiencias {
   background-color: #e9f8f9;
   border: 5px solid #301e67;
   border-radius: 5px;
