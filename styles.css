@@ -62,7 +62,7 @@ background-color:#301e67;
 
 /*about me*/
 .sobre-mi{
-  height: 500px;
+  height: 600px;
   padding: 10px;
 }
 .seccion-titulo{
@@ -86,6 +86,7 @@ background-color:#301e67;
 
 /*proyects*/
 .proyectos {
+  height: 600px;
   background-color: #e9f8f9;
   border: 5px solid #301e67;
   border-radius: 5px;
@@ -102,6 +103,7 @@ background-color:#301e67;
   margin: 20px;
 }
 #experiencias {
+  height: 600px;
   background-color: #e9f8f9;
   border: 5px solid #301e67;
   border-radius: 5px;
@@ -152,7 +154,7 @@ button {
   color: #301e67;
   size: 40px;
 }
-#redes{
+.redes{
   margin-right: 10px;
 }
 
