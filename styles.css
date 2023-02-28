@@ -46,8 +46,9 @@ text-align: center;
   font-style: italic;
   font-weight: lighter;
 }
-.skills-icons{
+.fondo-lineas{
   width: 100%;
+  margin-top: -11rem;
 }
 
 /*El contenido principal*/
@@ -62,12 +63,11 @@ background-color:#301e67;
 
 /*about me*/
 .sobre-mi{
-  height: 600px;
+  height: 350px;
   padding: 10px;
 }
 .seccion-titulo{
   font-size: 2rem;
-  font-style: italic;
   font-weight: bold;
   text-align: center;
   padding: 15px 0;
@@ -84,33 +84,118 @@ background-color:#301e67;
   font-style: italic;
 }
 
-/*proyects*/
+/*class de selectores*/
+.cursos {
+  background-color: #e9f8f9;
+  border: 5px solid #301e67;
+  border-radius: 5px;
+  margin: 20px;
+}
 .proyectos {
   height: 600px;
   background-color: #e9f8f9;
   border: 5px solid #301e67;
   border-radius: 5px;
-  width: 100%;
   margin: 20px;
 }
-
-
-#cursos {
-  background-color: #e9f8f9;
-  border: 5px solid #301e67;
-  border-radius: 5px;
-  width: 100%;
-  margin: 20px;
-}
-#experiencias {
+.experiencias {
   height: 600px;
   background-color: #e9f8f9;
   border: 5px solid #301e67;
   border-radius: 5px;
-  width: 100%;
   margin: 20px;
 }
+h4 {
+  color: #181823;
+}
 
+/*Contact*/
+.contact .conteiner{
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+.contact .rectangulo{
+margin-top: -5rem;
+background-color: black;
+border-radius: 10px;
+box-shadow: 0px 1px 4px 1px white;
+}
+.contact .row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.contact .descripcion{
+  color: white;
+  font-size:1.2rem,
+}
+.contact button {
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+.contact button i{
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+.contact button:hover{
+background-color: white;
+color: black;
+}
+.contact button:hover i{
+  color: black;
+}
+/*FOOTER*/
+footer {
+  min-height: 400px;
+  background-color:#301e67;
+  }
+
+.footer-text{
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: italic;
+}  
+.icons-redes a{
+width: 50px;
+height: 50px;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2px;
+margin: 10px;
+border: 2px solid white;
+border-radius: 50%;
+transition: all 0.2s ease-in;
+}
+.icons-redes i{
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2 ease-in;
+}
+.icons-redes a:hover{
+  background-color: white;
+  border: rgb(13, 110, 253);
+}
+.icons-redes a:hover i{
+  color: black;
+}
+.derechos-autor{
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+  margin-top: 30px;
+}
 
 
 /*media quory*/
@@ -118,50 +203,4 @@ background-color:#301e67;
   .navbar-brand {
     display: none;
   }
-}
-
-
-body {
-  background: url(https://th.bing.com/th/id/R.3a7cd36754fe86bfc4f15c6b7b4b7ce8?rik=solY%2fBuKo8tIuA&riu=http%3a%2f%2feskipaper.com%2fimages%2fblue-background-2.jpg&ehk=VRJi%2b%2fl73Dp9WFEpKtoD8rMiBlFr4kxJB5vE3s%2bgWVI%3d&risl=&pid=ImgRaw&r=0);
-  background-repeat: repeat;
-}
-
-/*title & p*/
-
-
-h4 {
-  color: #181823;
-}
-h5 {
-  color: #301e67;
-}
-p {
-  color: black;
-}
-
-/*id contents*/
-
-
-ul {
-  color: black;
-  margin: 20px;
-}
-li {
-  color: blue;
-}
-button {
-  margin-right: 10px;
-  color: #301e67;
-  size: 40px;
-}
-.redes{
-  margin-right: 10px;
-}
-
-footer {
-  background-color: #c0eef2;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
