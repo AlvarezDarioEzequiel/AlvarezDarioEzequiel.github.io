@@ -64,7 +64,9 @@
                   >ABOUT ME</a
                 >
               </li>
-
+              <li class="nav-item">
+                <a class="nav-link" href="#cursos">COURSES</a>
+              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#proyectos">PROYECTS</a>
               </li>
@@ -110,85 +112,250 @@
           </p>
         </div>
       </section>
-
-
-      <!--Cursos Certificados-->
+      <!--Cursos Realizados-->
       <section id="cursos" class="cursos seccion-clara">
         <h2 class="seccion-titulo">Cursos Realizados:</h2>
-      <!--Carousel-->
-      <div id="cursos-carousel" class="carousel carousel-dark slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#cursos-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#cursos-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#cursos-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#cursos-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#cursos-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <!--Carousel-->
+        <div id="cursos-carousel" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#cursos-carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#cursos-carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#cursos-carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#cursos-carousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#cursos-carousel"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="images/Coursera1.jpg"
+                class="d-block w-100"
+                alt="Certificate Coursera"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5><em>2021</em></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="images/excel.jpg"
+                class="d-block w-100"
+                alt="Certificate Excel Avanzado"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5><em>2021</em></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="images/argprog1.jpg"
+                class="d-block w-100"
+                alt="Certificate Argentina Programa"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5><em>2021</em></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="images/activate1.jpg"
+                class="d-block w-100"
+                alt="Certificate HTML & CSS I - Google Activate"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5><em>2023</em></h5>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="images/activate2.jpg"
+                class="d-block w-100"
+                alt="Certificate HTML & CSS II - Google Activate"
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h5><em>2023</em></h5>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#cursos-carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#cursos-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="carousel-inner">
-
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="images/Coursera1.jpg" class="d-block w-100" alt="Certificate Coursera">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><em>2021</em></h5>
-            </div>
-          </div>
-
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="images/excel.jpg" class="d-block w-100" alt="Certificate Excel Avanzado">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><em>2021</em></h5>
-            </div>
-          </div>
-
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="images/argprog1.jpg" class="d-block w-100" alt="Certificate Argentina Programa">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><em>2021</em></h5>
-            </div>
-          </div>
-
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="images/activate1.jpg" class="d-block w-100" alt="Certificate HTML & CSS I - Google Activate">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><em>2023</em></h5>
-            </div>
-          </div>
-
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="images/activate2.jpg" class="d-block w-100" alt="Certificate HTML & CSS II - Google Activate">
-            <div class="carousel-caption d-none d-md-block">
-              <h5><em>2023</em></h5>
-            </div>
-          </div>
-
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#cursos-carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#cursos-carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-
-
-
-    </section>
-
-
-
-
-
-
-
-
+      </section>
 
       <!--Proyects-->
+      <section
+        id="proyectos"
+        class="proyectos seccion-oscura d-flex flex-column"
+      >
+        <h4 class="seccion-titulo texto-blanco">Proyectos y Concursos:</h4>
+        <!--Galeria de proyectos-->
+        <div class="container text-center proyectos-contenedor">
+          <div class="row">
+            <!--Proyecto1-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyect">
+                <img src="images/11.jpg" alt="Proyect2018" />
+                <div class="overlay">
+                  <p>Proyecto (DISEÑO II) FraSe</p>
+                  <div class="iconos-contenedor">
+                    <a
+                      href="https://alumnos.unju.edu.ar/unju/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fa-solid fa-book-open-cover"></i>
+                    </a>
+                    <a href=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Proyecto2-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyect">
+                <img src="images/12.jpg" alt="Proyect2018" />
+                <div class="overlay">
+                  <p>Investigación (JoEA)</p>
+                  <div class="iconos-contenedor">
+                    <a
+                      href="https://alumnos.unju.edu.ar/unju/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fa-solid fa-book-open-cover"></i>
+                    </a>
+                    <a href=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Proyecto3-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyect">
+                <img src="images/13.jpg" alt="Proyect2018" />
+                <div class="overlay">
+                  <p>
+                    Concurso <br />
+                    (1er premio) NEOAPAY
+                  </p>
+                  <div class="iconos-contenedor">
+                    <a
+                      href="https://alumnos.unju.edu.ar/unju/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fa-solid fa-book-open-cover"></i>
+                    </a>
+                    <a href=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Proyecto4-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyect">
+                <img src="images/14.jpg" alt="Proyect2018" />
+                <div class="overlay">
+                  <p>
+                    Concurso <br />
+                    (2do premio) Nemandi
+                  </p>
+                  <div class="iconos-contenedor">
+                    <a
+                      href="https://alumnos.unju.edu.ar/unju/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fa-solid fa-book-open-cover"></i>
+                    </a>
+                    <a href=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Proyecto5-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyect">
+                <img src="images/15.jpg" alt="Proyect2018" />
+                <div class="overlay">
+                  <p>Concurso (Mención Especial) ZARM</p>
+                  <div class="iconos-contenedor">
+                    <a
+                      href="https://alumnos.unju.edu.ar/unju/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fa-solid fa-book-open-cover"></i>
+                    </a>
+                    <a href=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Proyecto6-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyect">
+                <img src="images/16.png" alt="Proyect2018" />
+                <div class="overlay">
+                  <p>Proyecto (SISTEMAS DE INFORMACIÓN) SALUFI</p>
+                  <div class="iconos-contenedor">
+                    <a
+                      href="https://alumnos.unju.edu.ar/unju/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <i class="fa-solid fa-book-open-cover"></i>
+                    </a>
+                    <a href=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <section id="proyectos" class="proyectos">
-        <h4><em>Proyectos y Concursos:</em></h4>
         <ul>
           <li>
             2018 - A.P.PA.CE / FI UNJu - materia DISEÑO II - "FraSe" Cuña
@@ -213,8 +380,8 @@
             Economía Popular"
           </li>
           <li>
-            2021 - Mención especial - materia SISTEMAS DE INFORMACIÓN - "SALUFI,
-            App móvil para la toma y almacenamiento de los datos de la mujer
+            2021 - FI UNJu - materia SISTEMAS DE INFORMACIÓN - "SALUFI, App
+            móvil para la toma y almacenamiento de los datos de la mujer
             (estudios preventivos, embarazo y situación social) obtenidos por
             los rastrillajes de los agentes sanitarios de la Provincia de Jujuy
             y generación de información gerencial para la toma de decisiones"
@@ -233,7 +400,7 @@
           <li>2019 - 2022 Community Manager (ONG)</li>
           <li>2021 - 2022 Administrativo Contable (Negocio Inmobiliario)</li>
           <li>
-            2019 - 2023 Consejero académico estudiantil (Facultad de Ingeniería
+            2020 - 2023 Consejero académico estudiantil (Facultad de Ingeniería
             UNJu)
           </li>
         </ul>
@@ -295,7 +462,7 @@
         ></a>
       </div>
       <div class="derechos-autor">
-        Alvarez Designs - Copyright (2023) &#169;
+        Alvarez Desings - Copyright (2023) &#169;
       </div>
     </footer>
 

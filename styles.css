@@ -4,7 +4,6 @@
   margin: 0%;
   padding: 0%;
 }
-
 /*section*/
 section {
   display: flex;
@@ -12,7 +11,6 @@ section {
   align-items: center;
   justify-content: center;
 }
-
 /*header*/
 .navbar {
   padding: 2rem;
@@ -46,8 +44,7 @@ section {
   font-style: italic;
   font-weight: lighter;
 }
-
-/*El contenido principal*/
+/*Contenido global*/
 .seccion-oscura {
   color: #c0eef2;
   background-color: #301e67;
@@ -55,6 +52,19 @@ section {
 .seccion-clara {
   color: #301e67;
   background-color: #c0eef2;
+}
+.seccion-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.texto-negro {
+  color: black;
+}
+.texto-blanco {
+  color: white;
 }
 body {
   background: url(https://th.bing.com/th/id/R.3a7cd36754fe86bfc4f15c6b7b4b7ce8?rik=solY%2fBuKo8tIuA&riu=http%3a%2f%2feskipaper.com%2fimages%2fblue-background-2.jpg&ehk=VRJi%2b%2fl73Dp9WFEpKtoD8rMiBlFr4kxJB5vE3s%2bgWVI%3d&risl=&pid=ImgRaw&r=0);
@@ -64,13 +74,6 @@ body {
 .sobre-mi {
   height: 600px;
   padding: 10px;
-}
-.seccion-titulo {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  padding: 15px 0;
-  font-family: "IBM Plex Sans", sans-serif;
 }
 .seccion-texto {
   color: #f5f6f7;
@@ -82,28 +85,70 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-style: italic;
 }
-
 /*Cursos*/
 .cursos {
-  padding: 40px 40px 80px 40px;
+  padding: 40px 40px 40px 40px;
 }
-.cursos .carousel{
+.cursos .carousel {
   max-width: 800px;
 }
-.carousel-item{
+.carousel-item {
   height: 700px;
 }
-
-
-/*class de selectores*/
-
+/*proyectos*/
 .proyectos {
-  height: 600px;
-  background-color: #e9f8f9;
-  border: 5px solid #301e67;
-  border-radius: 5px;
-  margin: 20px;
+  padding: 40px;
+  height: 1000px;
 }
+.proyectos img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px;
+}
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.proyect {
+  position: relative;
+}
+
+.proyect:hover img {
+  opacity: 0.2;
+}
+
+.proyect:hover .overlay {
+  opacity: 1;
+}
+.overlay .iconos-contenedor {
+  display: flex;
+}
+.overlay i {
+  color: black;
+  font-size: 60px;
+  margin: 10px;
+}
+/*class de selectores*/
 .experiencias {
   height: 600px;
   background-color: #e9f8f9;
@@ -111,10 +156,6 @@ body {
   border-radius: 5px;
   margin: 20px;
 }
-h4 {
-  color: #181823;
-}
-
 /*Contact*/
 .contact .conteiner {
   max-width: 1100px;
@@ -204,26 +245,24 @@ footer {
   padding: 20px;
   margin-top: 30px;
 }
-
 /*media quory*/
 @media screen and (max-width: 767px) {
   .navbar-brand {
     display: none;
   }
 }
-@media screen and (max-width: 600px){
-.sobre-mi{
-  padding-top: 80px;
+@media screen and (max-width: 600px) {
+  .sobre-mi {
+    padding-top: 80px;
+  }
+  .sobre-mi .seccion-texto {
+    padding-top: 0px;
+    padding-bottom: 80px;
+  }
 }
-.sobre-mi .seccion-texto{
-  padding-top: 0px;
-  padding-bottom: 80px;
-}
-}
-
-@media screen and (max-width: 800px){
-.cursos .carousel .carousel-item {
-  height: 300px;
-  height: 300px;
-}
+@media screen and (max-width: 600px) {
+  .cursos .carousel .carousel-item {
+    height: 300px;
+    height: 300px;
+  }
 }
