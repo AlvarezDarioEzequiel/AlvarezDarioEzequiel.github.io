@@ -140,14 +140,6 @@ body {
 .proyect:hover .overlay {
   opacity: 1;
 }
-.overlay .iconos-contenedor {
-  display: flex;
-}
-.overlay i {
-  color: black;
-  font-size: 60px;
-  margin: 10px;
-}
 /*class de selectores*/
 .experiencias {
   height: 600px;
@@ -245,24 +237,30 @@ footer {
   padding: 20px;
   margin-top: 30px;
 }
-/*media quory*/
+/*media query*/
 @media screen and (max-width: 767px) {
   .navbar-brand {
     display: none;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .sobre-mi {
     padding-top: 80px;
   }
   .sobre-mi .seccion-texto {
+    font-size: medium;
     padding-top: 0px;
     padding-bottom: 80px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
   .cursos .carousel .carousel-item {
     height: 300px;
-    height: 300px;
   }
+}
+
+
+@media screen and (max-width: 480px) {
+.proyectos.proyect img{
+}
 }
