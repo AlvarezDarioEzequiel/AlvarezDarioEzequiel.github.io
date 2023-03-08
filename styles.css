@@ -143,14 +143,12 @@ body {
 /*class de selectores*/
 .experiencias {
   height: 600px;
-  background-color: #e9f8f9;
-  border: 5px solid #301e67;
+  background-color: #c0eef2;
   border-radius: 5px;
-  margin: 20px;
 }
 /*Contact*/
-.contact .conteiner {
-  max-width: 1100px;
+.contact .container {
+  max-width: 1200px;
   min-height: 200px;
   padding: 20px;
 }
@@ -256,6 +254,12 @@ footer {
 @media screen and (max-width: 480px) {
   .cursos .carousel .carousel-item {
     height: 300px;
+  }
+}
+@media screen and (max-width:480px) {
+  .proyectos {
+    padding: 40px;
+    height: 2300px;
   }
 }
 
