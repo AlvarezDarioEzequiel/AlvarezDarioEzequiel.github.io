@@ -237,7 +237,7 @@ footer {
   padding: 20px;
   margin-top: 30px;
 }
-/*media query*/
+/*media queries*/
 @media screen and (max-width: 767px) {
   .navbar-brand {
     display: none;
@@ -259,8 +259,3 @@ footer {
   }
 }
 
-
-@media screen and (max-width: 480px) {
-.proyectos.proyect img{
-}
-}
