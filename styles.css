@@ -112,7 +112,6 @@ body {
   padding-top: 60px;
   margin-bottom: 40px;
 }
-
 .overlay {
   transition: all 0.2s ease;
   opacity: 0;
@@ -122,21 +121,17 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .overlay p {
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 0;
 }
-
 .proyect {
   position: relative;
 }
-
 .proyect:hover img {
   opacity: 0.2;
 }
-
 .proyect:hover .overlay {
   opacity: 1;
 }
@@ -145,6 +140,11 @@ body {
   color: #301e67;
   height: 600px;
   background-color: #c0eef2;
+}
+.rangoexp{
+  font-weight: bold;
+  color:#301e67;
+  font-size: large;
 }
 /*Contact*/
 .contact .container {
@@ -256,10 +256,9 @@ footer {
     height: 300px;
   }
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .proyectos {
     padding: 40px;
     height: 2300px;
   }
 }
-
