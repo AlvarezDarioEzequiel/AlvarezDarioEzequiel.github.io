@@ -3,7 +3,7 @@ let previousTitle = document.title;
 
 window.addEventListener("blur", () => {
   previousTitle = document.title;
-  document.title = "More About Darío"
+  document.title = "More About Dario"
 })
 
 window.addEventListener("focus", () => {
@@ -11,7 +11,7 @@ window.addEventListener("focus", () => {
 })
 
 
-//footer message efect
+//footer message effect
 let text = document.getElementById("thanks");
 let str = text.innerHTML;
 
