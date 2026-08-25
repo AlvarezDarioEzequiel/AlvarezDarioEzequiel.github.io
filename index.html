@@ -19,10 +19,9 @@
     <link rel="stylesheet" href="styles.css" />
     <!--Estilos de Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <!--bootstrap-->
@@ -35,67 +34,75 @@
   </head>
   <!--aqui empieza todo lo pro-->
   <body>
-    <header>
-      <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbar-toggler"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+    <nav class="navbar navbar-expand-md navbar-light" id="mainNav">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"
+          ><img
+            src="images/artificial-intelligence.png"
+            width="42"
+            alt="Page Logo"
+        /></a>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbar-toggler">
-            <a class="navbar-brand" href="#"
-              ><img
-                src="images/artificial-intelligence.png"
-                width="50"
-                alt="Page Logo"
-            /></a>
-            <ul
-              class="navbar-nav d-flex justify-content-center align-items-center"
-            >
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#about-me"
-                  >SOBRE MI</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#cursos">CURSOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#proyectos">PROYECTOS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#experiencias">EXPERIENCIA</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">CONTACTO</a>
-              </li>
-            </ul>
-          </div>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about-me"
+                >SOBRE MI</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cursos">CURSOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">PROYECTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experiencias">EXPERIENCIA</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACTO</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-      <section>
+      </div>
+    </nav>
+
+    <!--Hero + Sobre mi comparten un mismo fondo/capa de globos, sin quiebre visual-->
+    <div class="intro-wrap">
+      <div class="blob blob-purple" style="width:420px;height:420px; top:-120px; left:-140px;"></div>
+      <div class="blob blob-cyan" style="width:320px;height:320px; top:38%; right:-120px; opacity:.3;"></div>
+      <div class="blob blob-purple" style="width:280px;height:280px; bottom:160px; left:-90px; opacity:.3;"></div>
+
+      <header class="hero">
+        <span class="hero-eyebrow">Growth Operations Analyst</span>
         <div class="image-perfil">
-          <img src="images/profile pic.jpg" alt="image profile" />
+          <div class="image-perfil-ring">
+            <img src="images/profile pic.jpg" alt="image profile" />
+          </div>
         </div>
         <div class="datos-principales align-items-lg-stretch">
           <h1>ALVAREZ PAREDES DARIO EZEQUIEL</h1>
           <h2>Imagine to Create / Growth Operations Analyst</h2>
         </div>
-      </section>
-    </header>
-    <main>
+      </header>
+
       <!--About me-->
       <section id="about-me" class="sobre-mi seccion-oscura">
-        <div clas="contenedor">
-          <h3 class="seccion-titulo">Sobre mí</h3>
-          <p class="seccion-texto">
+        <div class="contenedor">
+          <h3 class="seccion-titulo" data-reveal>Sobre mí</h3>
+          <p class="seccion-texto" data-reveal>
             "Mi experiencia se centra en la investigación, análisis y el
             desarrollo de soluciones funcionales acordes a los proyectos y
             trabajos donde tuve la oportunidad de participar. Siempre con la
@@ -104,11 +111,19 @@
           </p>
         </div>
       </section>
+    </div>
+
+    <main>
+      <div class="section-divider from-dark divider-into-light">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,30 C960,60 1200,10 1440,50 L1440,100 L0,100 Z"></path></svg>
+      </div>
+
       <!--Cursos Realizados-->
       <section id="cursos" class="cursos seccion-clara">
-        <h2 class="seccion-titulo">Cursos IT y Herramientas:</h2>
+        <div class="blob blob-purple" style="width:300px;height:300px; top:-60px; left:-100px; opacity:.15;"></div>
+        <h2 class="seccion-titulo" data-reveal>Cursos IT y Herramientas:</h2>
         <!--Carousel-->
-        <div id="cursos-carousel" class="carousel carousel-dark slide">
+        <div id="cursos-carousel" class="carousel carousel-dark slide" data-reveal>
           <div class="carousel-indicators">
             <button
               type="button"
@@ -311,9 +326,9 @@
           </button>
         </div>
 
-        <h2 class="seccion-titulo">Cursos Habilidades de Gestión:</h2>
+        <h2 class="seccion-titulo" data-reveal>Cursos Habilidades de Gestión:</h2>
         <!--Carouse2-->
-        <div id="cursos-carousel2" class="carousel carousel-dark slide">
+        <div id="cursos-carousel2" class="carousel carousel-dark slide" data-reveal>
           <div class="carousel-indicators">
             <button
               type="button"
@@ -468,17 +483,23 @@
           </button>
         </div>
       </section>
+
+      <div class="section-divider from-light divider-into-dark">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,55 C260,10 500,95 740,45 C980,-5 1220,70 1440,30 L1440,100 L0,100 Z"></path></svg>
+      </div>
+
       <!--Proyects-->
       <section
         id="proyectos"
         class="proyectos seccion-oscura d-flex flex-column"
       >
-        <h4 class="seccion-titulo texto-blanco">Proyectos y Concursos:</h4>
+        <div class="blob blob-cyan" style="width:280px;height:280px; bottom:0; right:-80px; opacity:.15;"></div>
+        <h4 class="seccion-titulo texto-blanco" data-reveal>Proyectos y Concursos:</h4>
         <!--Galeria de proyectos-->
         <div class="container text-center proyectos-contenedor">
-          <div class="row">
+          <div class="row g-3">
             <!--Proyecto1-->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-reveal style="--reveal-delay:0s">
               <div class="proyect">
                 <img src="images/16.png" alt="Proyect2018" />
                 <div class="overlay">
@@ -487,7 +508,7 @@
               </div>
             </div>
             <!--Proyecto2-->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-reveal style="--reveal-delay:.08s">
               <div class="proyect">
                 <img src="images/17.jpg" alt="Proyect2018" />
                 <div class="overlay">
@@ -496,7 +517,7 @@
               </div>
             </div>
             <!--Proyecto3-->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-reveal style="--reveal-delay:.16s">
               <div class="proyect">
                 <img src="images/14.jpg" alt="Proyect2018" />
                 <div class="overlay">
@@ -508,7 +529,7 @@
               </div>
             </div>
             <!--Proyecto4-->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-reveal style="--reveal-delay:.24s">
               <div class="proyect">
                 <img src="images/13.jpg" alt="Proyect2018" />
                 <div class="overlay">
@@ -520,7 +541,7 @@
               </div>
             </div>
             <!--Proyecto5-->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-reveal style="--reveal-delay:.32s">
               <div class="proyect">
                 <img src="images/12.jpg" alt="Proyect2018" />
                 <div class="overlay">
@@ -529,7 +550,7 @@
               </div>
             </div>
             <!--Proyecto6-->
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12 col-md-6 col-lg-4" data-reveal style="--reveal-delay:.4s">
               <div class="proyect">
                 <img src="images/11.jpg" alt="Proyect2018" />
                 <div class="overlay">
@@ -539,7 +560,7 @@
             </div>
           </div>
         </div>
-        <ul>
+        <ul data-reveal>
           <li>
             2022 - FI UNJu - Proyecto de Investigación y Modelado - "Planta de
             Piscicultura -
@@ -584,38 +605,64 @@
           </li>
         </ul>
       </section>
+
+      <div class="section-divider from-dark divider-into-pale">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,45 C220,0 480,85 720,40 C960,-5 1220,75 1440,35 L1440,100 L0,100 Z"></path></svg>
+      </div>
+
       <!--Experience-->
       <section
         id="experiencias"
         class="experiencias justify-content-center align-items-center"
       >
-        <h2 class="seccion-titulo">Experiencias y pasatiempos:</h2>
-        <div class="rangoexp">2025 - Actualidad</div>
-        <span>Growth Operations Analyst (NUBIMETRICS)</span>
-        <div class="rangoexp">2024</div>
-        <span>Quality Assurance</span>
-        <span>Practica Profesional (GUILSOFT)</span>
-        <div class="rangoexp">2023 - 2024</div>
-        <span>Profesor Particular Fisica I, II y III</span>
-        <span>(INSTITEP)</span>
-        <div class="rangoexp">2020 - 2024</div>
-        <span>Consejero académico estudiantil</span>
-        <span>(Facultad de Ingeniería UNJu)</span>
-        <div class="rangoexp">2021 - 2022</div>
-        <span>Administrativo Contable</span>
-        <span>(Negocio Inmobiliario)</span>
-        <div class="rangoexp">2015 - 2022</div>
-        <span>Diseñador, Creador web y Community Manager</span>
-        <span>(Freelancer)</span>
-        <div class="rangoexp">2014 - 2022</div>
-        <span>Técnico Mecánico Electricista</span>
-        <span>(Diseño/Planimetría/Industrial)</span>
+        <h2 class="seccion-titulo" data-reveal>Experiencias y pasatiempos:</h2>
+        <div class="exp-row" data-reveal style="--reveal-delay:0s">
+          <div class="rangoexp">2025 - Actualidad</div>
+          <span>Growth Operations Analyst (NUBIMETRICS)</span>
+        </div>
+        <div class="exp-row" data-reveal style="--reveal-delay:.06s">
+          <div class="rangoexp">2024</div>
+          <span>Quality Assurance</span>
+          <span>Practica Profesional (GUILSOFT)</span>
+        </div>
+        <div class="exp-row" data-reveal style="--reveal-delay:.12s">
+          <div class="rangoexp">2023 - 2024</div>
+          <span>Profesor Particular Fisica I, II y III</span>
+          <span>(INSTITEP)</span>
+        </div>
+        <div class="exp-row" data-reveal style="--reveal-delay:.18s">
+          <div class="rangoexp">2020 - 2024</div>
+          <span>Consejero académico estudiantil</span>
+          <span>(Facultad de Ingeniería UNJu)</span>
+        </div>
+        <div class="exp-row" data-reveal style="--reveal-delay:.24s">
+          <div class="rangoexp">2021 - 2022</div>
+          <span>Administrativo Contable</span>
+          <span>(Negocio Inmobiliario)</span>
+        </div>
+        <div class="exp-row" data-reveal style="--reveal-delay:.3s">
+          <div class="rangoexp">2015 - 2022</div>
+          <span>Diseñador, Creador web y Community Manager</span>
+          <span>(Freelancer)</span>
+        </div>
+        <div class="exp-row" data-reveal style="--reveal-delay:.36s">
+          <div class="rangoexp">2014 - 2022</div>
+          <span>Técnico Mecánico Electricista</span>
+          <span>(Diseño/Planimetría/Industrial)</span>
+        </div>
       </section>
+
+      <div class="section-divider from-pale divider-into-dark">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C260,95 500,10 740,45 C980,80 1220,15 1440,55 L1440,100 L0,100 Z"></path></svg>
+      </div>
+
       <!--Contact-->
       <section id="contact" class="contact seccion-oscura">
+        <div class="blob blob-purple" style="width:260px;height:260px; top:-60px; left:-80px; opacity:.2;"></div>
         <div class="container">
           <div
             class="container text-center d-flex rectangulo justify-content-evenly"
+            data-reveal
           >
             <div class="row">
               <div class="col-12 col-md-4 seccion-titulo">¡Muchas Gracias!</div>
