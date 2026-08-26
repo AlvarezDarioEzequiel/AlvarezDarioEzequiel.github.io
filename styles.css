@@ -1,6 +1,6 @@
 /* =========================================================
    Portfolio — Alvarez Paredes Dario Ezequiel
-   Sistema de diseño inspirado en Assemblr World
+   Sistema de diseño inspirado en la mejora continua
    (paleta violeta/azul/celeste, "globos" orgánicos animados,
    navbar tipo píldora con vidrio, tipografía Poppins)
    ========================================================= */
@@ -85,34 +85,34 @@ section {
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - 32px);
-  max-width: 960px;
+  max-width: 720px;
   z-index: 1000;
   padding: 10px 26px;
   border-radius: 100px;
-  background: rgba(255, 255, 255, 0.14);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+  background: linear-gradient(120deg, rgba(58, 40, 150, 0.55), rgba(28, 18, 64, 0.55));
+  border: 1px solid rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 8px 30px rgba(28, 18, 64, 0.18);
+  box-shadow: 0 8px 30px rgba(28, 18, 64, 0.25);
   transition: background 0.5s var(--ease-fluid), box-shadow 0.5s var(--ease-fluid);
 }
 .navbar.scrolled {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(28, 18, 64, 0.08);
   box-shadow: 0 8px 24px rgba(28, 18, 64, 0.15);
 }
 .navbar .container-fluid {
   padding: 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-.navbar-brand img {
-  display: block;
-  border-radius: 50%;
+  justify-content: center;
 }
 .navbar-collapse {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  background: transparent;
+  flex-grow: 0;
 }
 .navbar-nav {
   gap: 24px;
@@ -157,8 +157,8 @@ section {
 
 @media (max-width: 767px) {
   .navbar {
-    top: 14px;
-    padding: 10px 18px;
+    top: 10px;
+    padding: 8px 18px;
     border-radius: 26px;
   }
   .navbar-collapse {
@@ -173,9 +173,6 @@ section {
     width: 100%;
     text-align: center;
     padding: 8px 0;
-  }
-  .navbar-brand {
-    order: -1;
   }
 }
 
@@ -648,9 +645,25 @@ footer {
     padding: 90px 20px 40px;
   }
 }
+@media screen and (max-width: 767px) {
+  header.hero {
+    padding: 90px 20px 50px;
+    min-height: auto;
+  }
+  .hero-eyebrow {
+    margin-bottom: 16px;
+  }
+  .image-perfil {
+    margin: 6px 0 18px;
+  }
+  .image-perfil img {
+    width: 130px;
+    height: 130px;
+  }
+}
 @media screen and (max-width: 480px) {
   header.hero {
-    padding-top: 150px;
+    padding-top: 78px;
   }
   .intro-wrap .sobre-mi {
     padding-top: 60px;
