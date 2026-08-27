@@ -97,6 +97,8 @@ spySections.forEach((section) => navSpy.observe(section));
 
 // cerrar el menú colapsable (mobile) al elegir una sección
 const navbarCollapseEl = document.getElementById("navbar-toggler");
+const navbarTogglerBtn = document.querySelector(".navbar-toggler");
+
 if (navbarCollapseEl && window.bootstrap) {
   const bsCollapse = window.bootstrap.Collapse.getOrCreateInstance(
     navbarCollapseEl,
@@ -108,6 +110,14 @@ if (navbarCollapseEl && window.bootstrap) {
         bsCollapse.hide();
       }
     });
+  });
+
+  // icono hamburguesa -> X, con transición suave
+  navbarCollapseEl.addEventListener("show.bs.collapse", () => {
+    navbarTogglerBtn.classList.add("is-open");
+  });
+  navbarCollapseEl.addEventListener("hide.bs.collapse", () => {
+    navbarTogglerBtn.classList.remove("is-open");
   });
 }
 
