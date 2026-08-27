@@ -15,8 +15,6 @@
     <title>CV | Alvarez Paredes Dario Ezequiel</title>
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <!--CSS-->
-    <link rel="stylesheet" href="styles.css" />
     <!--Estilos de Fuentes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,6 +29,8 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <!--CSS propio: se carga AL FINAL para que gane siempre sobre los estilos por defecto de Bootstrap-->
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <!--aqui empieza todo lo pro-->
   <body>
@@ -45,7 +45,9 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbar-toggler">
           <ul
