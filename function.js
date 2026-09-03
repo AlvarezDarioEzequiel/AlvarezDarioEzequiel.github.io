@@ -23,51 +23,56 @@ window.onscroll = function () {
 };
 
 // =========================================================
-// title page (comportamiento original)
+// title page (usa el idioma activo)
 // =========================================================
+const htmlEl = document.documentElement;
 let previousTitle = document.title;
 
 window.addEventListener("blur", () => {
   previousTitle = document.title;
-  document.title = "Regresa para saber más";
+  document.title = htmlEl.dataset["blur" + capitalize(htmlEl.lang)];
 });
 
 window.addEventListener("focus", () => {
   document.title = previousTitle;
 });
 
-// =========================================================
-// footer message effect (comportamiento original)
-// =========================================================
-let text = document.getElementById("thanks");
-let str = text.innerHTML;
-
-text.innerHTML = "";
-
-let speed = 200;
-let i = 0;
-
-function typeWriter() {
-  if (i < str.length) {
-    text.innerHTML += str.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
+function capitalize(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-setTimeout(typeWriter, speed);
+// =========================================================
+// footer message effect (re-ejecutable al cambiar de idioma)
+// =========================================================
+const thanksEl = document.getElementById("thanks");
+let typewriterTimeoutId = null;
+
+function startTypewriter(str) {
+  clearTimeout(typewriterTimeoutId);
+  thanksEl.innerHTML = "";
+  let i = 0;
+  const speed = 60;
+
+  function typeWriter() {
+    if (i < str.length) {
+      thanksEl.innerHTML += str.charAt(i);
+      i++;
+      typewriterTimeoutId = setTimeout(typeWriter, speed);
+    }
+  }
+  typewriterTimeoutId = setTimeout(typeWriter, speed);
+}
 
 // =========================================================
 // NAVBAR: efecto vidrio al hacer scroll
 // =========================================================
 const mainNav = document.getElementById("mainNav");
+const langSwitch = document.getElementById("langSwitch");
 
 function toggleNavGlass() {
-  if (window.scrollY > 80) {
-    mainNav.classList.add("scrolled");
-  } else {
-    mainNav.classList.remove("scrolled");
-  }
+  const isScrolled = window.scrollY > 80;
+  mainNav.classList.toggle("scrolled", isScrolled);
+  if (langSwitch) langSwitch.classList.toggle("scrolled", isScrolled);
 }
 toggleNavGlass();
 window.addEventListener("scroll", toggleNavGlass);
@@ -139,3 +144,52 @@ const revealObserver = new IntersectionObserver(
 );
 
 revealEls.forEach((el) => revealObserver.observe(el));
+
+// =========================================================
+// SELECTOR DE IDIOMA (ES / EN)
+// =========================================================
+const textNodes = document.querySelectorAll("[data-i18n]");
+const htmlNodes = document.querySelectorAll("[data-i18n-html]");
+const langButtons = document.querySelectorAll(".lang-btn");
+
+function applyLanguage(lang) {
+  htmlEl.lang = lang;
+
+  textNodes.forEach((el) => {
+    if (el.dataset[lang] !== undefined) el.textContent = el.dataset[lang];
+  });
+
+  htmlNodes.forEach((el) => {
+    const key = lang + "Html";
+    if (el.dataset[key] !== undefined) el.innerHTML = el.dataset[key];
+  });
+
+  document.title = htmlEl.dataset["title" + capitalize(lang)];
+  previousTitle = document.title;
+
+  startTypewriter(thanksEl.dataset[lang]);
+
+  langButtons.forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.lang === lang);
+  });
+
+  try {
+    localStorage.setItem("siteLang", lang);
+  } catch (e) {
+    /* localStorage no disponible: el idioma simplemente no persiste */
+  }
+}
+
+langButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    if (!btn.classList.contains("active")) applyLanguage(btn.dataset.lang);
+  });
+});
+
+let savedLang = "es";
+try {
+  savedLang = localStorage.getItem("siteLang") || "es";
+} catch (e) {
+  savedLang = "es";
+}
+applyLanguage(savedLang);
