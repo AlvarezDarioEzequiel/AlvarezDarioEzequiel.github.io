@@ -1,6 +1,6 @@
 /* =========================================================
    Portfolio — Alvarez Paredes Dario Ezequiel
-   Sistema de diseño inspirado en circles
+   Sistema de diseño inspirado en Circles
    (paleta violeta/azul/celeste, "globos" orgánicos animados,
    navbar tipo píldora con vidrio, tipografía Poppins)
    ========================================================= */
@@ -101,9 +101,9 @@ section {
   color: rgba(255, 255, 255, 0.75);
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 0.68rem;
+  font-size: 0.65rem;
   letter-spacing: 0.04em;
-  padding: 6px 12px;
+  padding: 6px 10px;
   border-radius: 100px;
   cursor: pointer;
   transition: all 0.4s var(--ease-fluid);
@@ -126,8 +126,8 @@ section {
     padding: 3px;
   }
   .lang-btn {
-    font-size: 0.6rem;
-    padding: 5px 9px;
+    font-size: 0.58rem;
+    padding: 5px 7px;
   }
 }
 
